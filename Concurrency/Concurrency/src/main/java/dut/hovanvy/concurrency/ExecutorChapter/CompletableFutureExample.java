@@ -16,6 +16,7 @@ import java.util.concurrent.TimeUnit;
  */
 public class CompletableFutureExample {
     public static void main(String[] args) throws InterruptedException, ExecutionException {
+        System.out.println("=========");
         CompletableFuture<String> completableFuture = new CompletableFuture<>();
         
         completableFuture.complete(computeSomething());
@@ -52,6 +53,8 @@ public class CompletableFutureExample {
         // block and wait for the future to complete
         System.out.println("Result: " + future3.get());
         System.out.println("Done!!!");
+        
+        System.out.println("=========");
     }
     
     public static String computeSomething() {

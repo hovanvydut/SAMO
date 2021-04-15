@@ -18,15 +18,7 @@ public class PauseExecWithSleep {
     static class SleepMessages {
 
         public void testSleep() throws InterruptedException {
-            String[] importantInfo = {
-                "A",
-                "B",
-                "C",
-                "D",
-                "E",
-                "F",
-                "G"
-            };
+            String[] importantInfo = {"A", "B", "C", "D", "E", "F", "G"};
 
             for (int i = 0; i < importantInfo.length; i++) {
                 Thread.sleep(4000);

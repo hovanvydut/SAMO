@@ -20,14 +20,7 @@ public class SimpleThread_Join {
     private static class MessageLoop implements Runnable{
         @Override
         public void run() {
-            String[] importantInfo = {
-                "A",
-                "B",
-                "C",
-                "D",
-                "E",
-                "F"
-            };
+            String[] importantInfo = {"A", "B", "C", "D", "E", "F"};
             
             try {
                 for (int i = 0; i < importantInfo.length; i++) {

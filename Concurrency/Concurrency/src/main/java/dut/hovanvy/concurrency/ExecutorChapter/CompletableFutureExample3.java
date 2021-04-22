@@ -37,12 +37,14 @@ class CreditRatingService {
 class APIUtils {
     public static CompletableFuture<User> getUserDetails(String userId) {
         return CompletableFuture.supplyAsync(() -> {
+            System.out.println(Thread.currentThread().getName());
             return UserService.getUserDetails(userId);
         });
     }
     
     public static CompletableFuture<Double> getCreditRating(User user) {
         return CompletableFuture.supplyAsync(() -> {
+            System.out.println(Thread.currentThread().getName());
             return CreditRatingService.getCreditRating(user);
         });
     }
